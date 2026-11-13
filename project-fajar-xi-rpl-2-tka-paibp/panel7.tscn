@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cspj11p8lumhx"]
+
+[ext_resource type="Texture2D" uid="uid://c1hr8vm4fx6vd" path="res://istockphoto-1846080300-612x612.jpg" id="1_ltout"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_j31sy"]
+texture = ExtResource("1_ltout")
+
+[node name="Panel" type="Panel" unique_id=1382168995]
+offset_left = 1.0
+offset_right = 1144.0
+offset_bottom = 645.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_j31sy")

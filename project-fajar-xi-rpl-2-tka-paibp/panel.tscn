@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://pngsmfxr1t7q"]
+
+[ext_resource type="Texture2D" uid="uid://csy48hen7e7os" path="res://canva-latar-belakang-pola-geometris-islami-MAHPLlVg-pY (1).jpg" id="1_5b1ud"]
+[ext_resource type="Texture2D" uid="uid://delyqkk6p8k0q" path="res://beautiful-landscape-mosque-islamic-background-260nw-1729676344.webp" id="2_5b1ud"]
+[ext_resource type="Script" uid="uid://dsy4h5i6j41wx" path="res://panel.gd" id="2_mn0ys"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fu7sn"]
+texture = ExtResource("1_5b1ud")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ikblc"]
+bg_color = Color(0.6784314, 0.84705883, 0.9019608, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5b1ud"]
+bg_color = Color(0.6784314, 0.84705883, 0.9019608, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[node name="Panel" type="Panel" unique_id=727676265]
+offset_left = 4.0
+offset_right = 1151.0
+offset_bottom = 645.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_fu7sn")
+script = ExtResource("2_mn0ys")
+
+[node name="BeautifulLandscapeMosqueIslamicBackground260Nw1729676344" type="Sprite2D" parent="." unique_id=1345961552]
+position = Vector2(-1573, 1456)
+texture = ExtResource("2_5b1ud")
+
+[node name="Label" type="Label" parent="." unique_id=755326376]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.035
+anchor_bottom = 0.018000001
+offset_left = 442.0
+offset_top = 245.0
+offset_right = 637.995
+offset_bottom = 317.46204
+theme_override_font_sizes/font_size = 37
+text = "𝐏𝚰𝐋𝚰𝐇 𝐌𝐄𝐍𝐔"
+
+[node name="Button" type="Button" parent="." unique_id=783370978]
+layout_mode = 0
+offset_left = 455.0
+offset_top = 327.0
+offset_right = 641.0
+offset_bottom = 386.0
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 9
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_ikblc")
+text = "LATIHAN SOAL TKA"
+
+[node name="Button2" type="Button" parent="." unique_id=1658253976]
+layout_mode = 0
+offset_left = 454.0
+offset_top = 414.0
+offset_right = 640.0
+offset_bottom = 473.0
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 9
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_ikblc")
+text = "ULANGAN HARIAN"
+
+[node name="Button3" type="Button" parent="." unique_id=1469818557]
+layout_mode = 0
+offset_left = 63.0
+offset_top = 52.0
+offset_right = 206.0
+offset_bottom = 94.0
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 9
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_5b1ud")
+text = "EXIT"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://cjf65gluqcjhv"]
+
+[ext_resource type="Script" uid="uid://0ro41yw6iqms" path="res://soal_4.gd" id="1_fcok6"]
+[ext_resource type="Texture2D" uid="uid://bhd71bekeb8ks" path="res://68f0899f28c7c624005fc4cd4ac51cb8.png" id="1_temir"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_glbon"]
+texture = ExtResource("1_temir")
+
+[sub_resource type="LabelSettings" id="LabelSettings_xbrup"]
+font_size = 30
+
+[node name="Node2D" type="Node2D" unique_id=842381049]
+script = ExtResource("1_fcok6")
+
+[node name="Panel" type="Panel" parent="." unique_id=1196513829]
+offset_right = 1156.0
+offset_bottom = 644.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_glbon")
+
+[node name="Label" type="Label" parent="." unique_id=2066539551]
+offset_left = -13.0
+offset_top = 103.0
+offset_right = 1133.0
+offset_bottom = 193.0
+text = "Perilaku seseorang yang menjauhi sifat 
+berfoya-foya (pemborosan) dalam Islam dapat 
+dilatih dengan cara..."
+label_settings = SubResource("LabelSettings_xbrup")
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=794311582]
+offset_left = 139.0
+offset_top = 272.0
+offset_right = 1003.0
+offset_bottom = 326.0
+text = "a. Mengumpulkan harta sebanyak-banyaknya untuk dibanggakan"
+
+[node name="Button2" type="Button" parent="." unique_id=1436202745]
+offset_left = 144.0
+offset_top = 343.0
+offset_right = 1008.0
+offset_bottom = 397.0
+text = "b. Bersedekah dan berbagi kepada yang membutuhkan"
+
+[node name="Button3" type="Button" parent="." unique_id=123472581]
+offset_left = 144.0
+offset_top = 423.0
+offset_right = 1008.0
+offset_bottom = 477.0
+text = "c. Menutup diri dari pergaulan sosial"
+
+[node name="Button4" type="Button" parent="." unique_id=2118052879]
+offset_left = 142.0
+offset_top = 514.0
+offset_right = 1006.0
+offset_bottom = 568.0
+text = "d. Membeli barang mahal demi gengsi"
+
+[node name="Button5" type="Button" parent="." unique_id=1666420982]
+offset_left = 37.0
+offset_top = 31.0
+offset_right = 206.0
+offset_bottom = 87.0
+text = "kembali"
+
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed"]

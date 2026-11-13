@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://kco1ak8iphgq"]
+
+[ext_resource type="Texture2D" uid="uid://bsktijm8yjhej" path="res://pngtree-illuminated-islamic-background-with-arches-image_20862519.webp" id="1_e0uik"]
+[ext_resource type="Texture2D" uid="uid://b8tsudevq2b1x" path="res://Islam-BS-KLS-XI-cover.png" id="2_6qw6w"]
+[ext_resource type="Script" uid="uid://c5ol7jqcyc8gq" path="res://panel_1.gd" id="2_l3jk8"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xbrup"]
+texture = ExtResource("1_e0uik")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p6oq0"]
+texture = ExtResource("2_6qw6w")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l3jk8"]
+bg_color = Color(0.6784314, 0.84705883, 0.9019608, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6qw6w"]
+bg_color = Color(0.6784314, 0.84705883, 0.9019608, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[node name="Panel" type="Panel" unique_id=450713354]
+offset_left = 4.0
+offset_right = 1152.0
+offset_bottom = 649.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_xbrup")
+script = ExtResource("2_l3jk8")
+
+[node name="Label" type="Label" parent="." unique_id=850299905]
+layout_mode = 0
+offset_left = 387.0
+offset_top = 131.0
+offset_right = 771.0
+offset_bottom = 182.0
+theme_override_colors/font_color = Color(0.2159017, 0.21590173, 0.2159017, 1)
+theme_override_font_sizes/font_size = 37
+
+[node name="Panel" type="Panel" parent="Label" unique_id=560783171]
+layout_mode = 0
+offset_left = 70.0
+offset_top = 15.0
+offset_right = 310.0
+offset_bottom = 337.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_p6oq0")
+
+[node name="Button" type="Button" parent="." unique_id=1713215237]
+layout_mode = 0
+offset_left = 483.0
+offset_top = 500.0
+offset_right = 676.0
+offset_bottom = 552.0
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 9
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_l3jk8")
+text = "MULAI TEST
+"
+
+[node name="Button3" type="Button" parent="." unique_id=1086889014]
+layout_mode = 0
+offset_left = 59.0
+offset_top = 59.0
+offset_right = 201.0
+offset_bottom = 102.0
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 9
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_6qw6w")
+text = "EXIT"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

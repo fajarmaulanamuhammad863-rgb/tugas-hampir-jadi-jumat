@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://ceqxd4pao6se3"]
+
+[ext_resource type="Script" uid="uid://ciu8fou4so2mc" path="res://nilai.gd" id="1_amm4f"]
+[ext_resource type="Texture2D" uid="uid://br5gj0h4k1nu5" path="res://islamic-background-green-yellow-white-paper-cut-lantern-islamic-background-template-islamic-background-green-yellow-416717157.webp" id="2_5yb41"]
+[ext_resource type="Texture2D" uid="uid://c65e33umc70d7" path="res://images.jpg" id="3_5yb41"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gop54"]
+texture = ExtResource("2_5yb41")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5yb41"]
+texture = ExtResource("3_5yb41")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kjp82"]
+bg_color = Color(0.6784314, 0.84705883, 0.9019608, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[node name="Control" type="Control" unique_id=1283748280]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 2.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_amm4f")
+metadata/_edit_vertical_guides_ = [7.0]
+
+[node name="Panel" type="Panel" parent="." unique_id=1867771072]
+layout_mode = 0
+offset_left = -6.0
+offset_top = 5.0
+offset_right = 1152.0
+offset_bottom = 645.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_gop54")
+
+[node name="Label" type="Label" parent="Panel" unique_id=1531586188]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.035
+anchor_bottom = 0.071
+offset_left = 372.0
+offset_top = 699.0
+offset_right = 1124.47
+offset_bottom = 867.56
+theme_override_colors/font_color = Color(0.37413925, 0.37413928, 0.37413922, 1)
+theme_override_font_sizes/font_size = 37
+text = "𝐍𝚰𝐋𝐀𝚰 𝐀𝐍𝐃𝐀 100/100
+"
+
+[node name="Panel2" type="Panel" parent="." unique_id=1456346040]
+layout_mode = 0
+offset_left = 359.0
+offset_top = 170.0
+offset_right = 745.0
+offset_bottom = 412.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_5yb41")
+
+[node name="Label" type="Label" parent="Panel2" unique_id=2146246250]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.035
+anchor_bottom = 0.071
+offset_left = 72.0
+offset_top = 87.0
+offset_right = 293.49
+offset_bottom = 174.818
+theme_override_colors/font_color = Color(0.25262913, 0.23184705, 0.1908027, 1)
+theme_override_font_sizes/font_size = 22
+text = "𝐍𝚰𝐋𝐀𝚰 𝐀𝐍𝐃𝐀 100/100
+"
+
+[node name="Button3" type="Button" parent="." unique_id=1035770794]
+layout_mode = 0
+offset_left = 459.0
+offset_top = 432.0
+offset_right = 639.0
+offset_bottom = 503.0
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 9
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_kjp82")
+text = "EXIT"
+
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
